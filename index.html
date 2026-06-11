@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GrayGhost 的个人主页，记录代码、设计与作品。">
+    <title>GrayGhost - 主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js" aria-hidden="true"></div>
+
+    <nav aria-label="主导航">
+        <div class="logo">GrayGhost</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">个人主页</a></li>
+            <li><a href="#portfolio">作品集</a></li>
+            <li><a href="#blog">博客</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">Personal Homepage</p>
+                <h1>你好，我是 <span class="highlight">GrayGhost</span></h1>
+                <p class="hero-copy">探索代码与设计的无限可能，记录一些正在成形的想法。</p>
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn">查看作品</a>
+                    <a href="#blog" class="ghost-link">阅读博客</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-shell">
+            <div class="section-inner">
+                <h2>作品集</h2>
+                <div class="preview-grid">
+                    <article class="preview-item">
+                        <span>01</span>
+                        <h3>前端实验</h3>
+                        <p>界面、动画与交互细节的练习场。</p>
+                    </article>
+                    <article class="preview-item">
+                        <span>02</span>
+                        <h3>项目记录</h3>
+                        <p>把完成中的项目整理成可回看的路径。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section-shell">
+            <div class="section-inner">
+                <h2>博客</h2>
+                <p class="section-copy">这里可以继续放技术笔记、设计想法或个人随笔。</p>
+            </div>
+        </section>
+    </main>
+
+    <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script defer src="app.js"></script>
+</body>
+</html>
