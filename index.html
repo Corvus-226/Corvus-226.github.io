@@ -1,67 +1,89 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GrayGhost 的个人主页，记录代码、设计与作品。">
-    <title>GrayGhost - 主页</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="color-scheme" content="light dark">
+    <meta name="description" content="Personal homepage of Yubo Zhao, an undergraduate student in Artificial Intelligence at Chang'an University.">
+    <title>Yubo Zhao</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5c99'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EYZ%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="particles-js" aria-hidden="true"></div>
+    <div class="page">
+        <aside class="profile">
+            <!-- To use a photo: put avatar.jpg in the repo root and replace this div with
+                 <img class="avatar" src="avatar.jpg" alt="Yubo Zhao"> -->
+            <div class="avatar" aria-hidden="true">YZ</div>
 
-    <nav aria-label="主导航">
-        <div class="logo">GrayGhost</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">个人主页</a></li>
-            <li><a href="#portfolio">作品集</a></li>
-            <li><a href="#blog">博客</a></li>
-        </ul>
-    </nav>
+            <h1>Yubo Zhao</h1>
+            <p class="name-alt" lang="zh-CN">赵昱博</p>
+            <p class="role">Undergraduate Student</p>
+            <p class="affiliation">
+                Artificial Intelligence<br>
+                Chang'an University<br>
+                Xi'an, China
+            </p>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <p class="eyebrow">Personal Homepage</p>
-                <h1>你好，我是 <span class="highlight">GrayGhost</span></h1>
-                <p class="hero-copy">探索代码与设计的无限可能，记录一些正在成形的想法。</p>
-                <div class="hero-actions">
-                    <a href="#portfolio" class="btn">查看作品</a>
-                    <a href="#blog" class="ghost-link">阅读博客</a>
+            <ul class="links">
+                <li>
+                    <span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                        zhaoyb0226 [at] gmail.com
+                    </span>
+                </li>
+                <li>
+                    <a href="https://github.com/Corvus-226">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a senior undergraduate student majoring in Artificial Intelligence
+                    (Sino-French Program) at Chang'an University in Xi'an, China. I am broadly
+                    interested in computer vision and deep learning, especially how they can be
+                    applied to medical image analysis.
+                </p>
+                <p>
+                    I am at an early stage of my research journey and always happy to connect
+                    with people working on related topics. Feel free to reach out by email.
+                </p>
+            </section>
+
+            <section id="interests">
+                <h2>Research Interests</h2>
+                <ul class="interests">
+                    <li>Computer Vision</li>
+                    <li>Medical Image Analysis</li>
+                    <li>Deep Learning</li>
+                    <li>3D Reconstruction</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="entry">
+                    <h3>Chang'an University</h3>
+                    <span class="date">Sep 2023 – Jul 2027 (expected)</span>
+                    <p class="detail">B.Eng. in Artificial Intelligence (Sino-French Program)</p>
+                    <p class="detail coursework">
+                        Relevant coursework: Pattern Recognition &amp; Machine Learning, Deep Learning,
+                        Search &amp; Optimization, Knowledge Representation &amp; Reasoning,
+                        Algorithms &amp; Data Structures, Linear Algebra
+                    </p>
                 </div>
-            </div>
-        </section>
+            </section>
+        </main>
+    </div>
 
-        <section id="portfolio" class="section-shell">
-            <div class="section-inner">
-                <h2>作品集</h2>
-                <div class="preview-grid">
-                    <article class="preview-item">
-                        <span>01</span>
-                        <h3>前端实验</h3>
-                        <p>界面、动画与交互细节的练习场。</p>
-                    </article>
-                    <article class="preview-item">
-                        <span>02</span>
-                        <h3>项目记录</h3>
-                        <p>把完成中的项目整理成可回看的路径。</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog" class="section-shell">
-            <div class="section-inner">
-                <h2>博客</h2>
-                <p class="section-copy">这里可以继续放技术笔记、设计想法或个人随笔。</p>
-            </div>
-        </section>
-    </main>
-
-    <script defer src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script defer src="app.js"></script>
+    <footer class="site-footer">
+        <p>© 2026 Yubo Zhao · Last updated November 2026</p>
+    </footer>
 </body>
 </html>
